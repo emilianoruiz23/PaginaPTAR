@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2/family=Montserrat:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #007681; /* Pantone 7468 UP (original: #c906ff) */
+    background: linear-gradient(to right, #e2e2e2, #007681); /* Degradado con Pantone 7468 UP */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.container {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 58, 93, 0.2); /* Sombra con Pantone 2965 UP (opacidad 0.2) */
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+.container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+    color: #003A5D; /* Pantone 2965 UP para texto */
+}
+.container span {
+    font-size: 12px;
+    color: #003A5D; /* Pantone 2965 UP */
+}
+.container a {
+    color: #003A5D; /* Pantone 2965 UP (original: #333) */
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}

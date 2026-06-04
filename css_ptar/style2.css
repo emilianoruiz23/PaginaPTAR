@@ -1,0 +1,47 @@
+.container button {
+    background-color: #00B5B8; /* Pantone 7467 UP (original: #512da8) */
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.container button.hidden {
+    background-color: transparent;
+    border-color: #fff; /* Se mantiene blanco para contraste */
+}
+.container form {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+.container input {
+    background-color: #f0f8ff; /* Tono azul claro (original: #eee) */
+    border: 1px solid #00B5B8; /* Pantone 7467 UP (añadido borde) */
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+.sign-in {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}

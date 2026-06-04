@@ -1,0 +1,30 @@
+.toggle-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1000;
+}
+.container.active .toggle-container {
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+.toggle {
+    background-color: #9A8D3E; /* Pantone 2965 UP (original: #512da8) */
+    height: 100%;
+    background: linear-gradient(to right, #007681, #9A8D3E); /* Pantone 7468 UP → 2965 UP */
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+.container.active .toggle {
+    transform: translateX(50%);
+}

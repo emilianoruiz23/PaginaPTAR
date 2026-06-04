@@ -1,0 +1,67 @@
+/* Añade esto al inicio del archivo */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Asap&display=swap');
+
+.toggle-panel {
+    /* ... (mantén tus propiedades existentes) ... */
+    font-family: 'Asap', sans-serif; /* Fuente para texto normal */
+}
+
+.toggle-panel h1 {
+    /* ... (propiedades existentes) ... */
+    font-family: 'Hind', sans-serif; /* Fuente para títulos */
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.toggle-panel p {
+    /* ... (propiedades existentes) ... */
+    font-family: 'Asap', sans-serif;
+    line-height: 1.5;
+}
+
+.toggle-panel button {
+    /* ... (propiedades existentes) ... */
+    font-family: 'Hind', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.toggle-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+    color: #003A5D; /* Pantone 2965 UP para texto */
+}
+
+.toggle-panel button {
+    color: #003A5D; /* Pantone 2965 UP */
+    border-color: #00B5B8; /* Pantone 7467 UP para bordes */
+}
+
+.toggle-left {
+    transform: translateX(-200%);
+    background-color: rgba(0, 118, 129, 0.1); /* Pantone 7467 UP con 10% opacidad */
+}
+
+.container.active .toggle-left {
+    transform: translateX(0);
+}
+
+.toggle-right {
+    right: 0;
+    transform: translateX(0);
+    background-color: rgba(0, 118, 129, 0.1); /* Pantone 7468 UP con 10% opacidad */
+}
+
+.container.active .toggle-right {
+    transform: translateX(200%);
+}
